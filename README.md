@@ -1,7 +1,5 @@
 # Fashion Platform Landing Page
 
-![Fashion Platform Logo](path/to/logo.png)  <!-- Replace with your logo image path -->
-
 ## Overview
 
 Welcome to the **Fashion Platform**! This project features a stylish and modern landing page created using HTML and CSS. The landing page serves as an entry point for users to explore the latest fashion trends, products, and collections.
