@@ -1,0 +1,243 @@
+/* Import Merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Font Styles */
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Main Container Layout */
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 60% 15%;
+}
+
+/* Top Left Section */
+.top-left {
+    /* background-color: skyblue; */
+    grid-row: 1;
+    grid-column: 1;
+    padding: 30px;
+}
+.diamond {
+    width: 25px;
+    height: 25px;
+    rotate: 45deg; /* Rotates to form a diamond */
+    background-color: #000;
+}
+
+/* Top Right Section (Menu) */
+.top-right {
+    /* background-color: rgb(224, 234, 30); */
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 20px;
+}
+.top-right h2 {
+    margin-bottom: 30px;
+    font-size: 11px;
+    align-self: flex-end;
+}
+h3 {
+    font-size: 15px;
+    font-family: sans-serif;
+    align-self: flex-end;
+}
+
+/* Left Center Section */
+.left-center {
+    /* background-color: rgba(255, 0, 0, 0.266); */
+    grid-column: 1 / 3;
+    grid-row: 2;
+    padding-left: 50px;
+}
+h2 {
+    font-size: 5.85vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-center h2:nth-child(2n) {
+    text-align: center;
+}
+.line {
+    display: flex;
+    align-items: center;
+}
+.line2 {
+    margin-left: 10px;
+    height: 7px;
+    width: 70px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+/* Left Bottom Section */
+.left-bottom {
+    /* background-color: gray; */
+    grid-column: 1 / 3;
+    grid-row: 3;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+p {
+    max-width: 300px;
+}
+
+/* Right Section (Video) */
+.right {
+    /* background-color: white; */
+    grid-row: 1 / 4;
+    grid-column: 3;
+    padding-right: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+video {
+    height: 93vh;
+    width: 35vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Arrow Icon */
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+i {
+    font-size: 40px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 35% 10% 40%;
+    }
+
+    /* Top Left Section */
+    .top-left {
+        /* background-color: skyblue; */
+        grid-row: 1;
+        grid-column: 1/2;
+        padding: 15px;
+    }
+
+    .diamond {
+        width: 10px;
+        height: 10px;
+        rotate: 45deg;
+        background-color: #000;
+    }
+
+    /* Top Right Section */
+    .top-right {
+        /* background-color: rgb(224, 234, 30); */
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-right h2 {
+        margin-bottom: 5px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+
+    /* Left Center Section */
+    .left-center {
+        /* background-color: rgba(255, 0, 0, 0.266); */
+        grid-row: 2;
+        grid-column: 1 / 3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    .line2 {
+        height: 5px;
+        width: 35px;
+    }
+
+    /* Left Bottom Section */
+    .left-bottom {
+        /* background-color: gray; */
+        grid-row: 3;
+        grid-column: 1 / 3;
+        padding: 5px;
+    }
+    p {
+        max-width: 100vw;
+        text-align: justify;
+    }
+
+    /* Right Section */
+    .right {
+        /* background-color: red; */
+        grid-row: 4;
+        grid-column: 1 / 3;
+        display: flex;               /* Use flexbox for centering */
+        justify-content: center;     /* Centers the content horizontally */
+        align-items: center;         /* Centers the content vertically */
+        width: 100vw;
+        height: 100vh;
+    }    
+    video {
+        height: 93vh;
+        width: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Hide search icon on small screens */
+    .ri-search-line {
+        visibility: hidden;
+        display: none;
+    }
+    .arrow {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        background-color: orange;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+        rotate: 90deg;
+    }
+}
