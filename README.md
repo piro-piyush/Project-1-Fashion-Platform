@@ -37,7 +37,7 @@ To view this project locally:
    ```
 2. Navigate to the project directory:
    ```bash
-cd Project-1-Fashion-Platform
+   cd Project-1-Fashion-Platform
    ```
 3. Open index.html in your web browser.
 
@@ -45,6 +45,7 @@ cd Project-1-Fashion-Platform
 If you would like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
+  
 2. Create your feature branch:
    ```bash
    git checkout -b feature/YourFeature
