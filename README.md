@@ -35,25 +35,25 @@ To view this project locally:
    git clone https://github.com/yourusername/fashion-platform-landing-page.git
 
    ```
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 ```bash
 cd Project-1-Fashion-Platform
 ```
-3.Open index.html in your web browser.
+3. Open index.html in your web browser.
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
 
-1.Fork the repository.
-2.Create your feature branch:
+1. Fork the repository.
+2. Create your feature branch:
 ```bash
 git checkout -b feature/YourFeature
 ```
-3.Commit your changes:
+3. Commit your changes:
 ```bash
 git commit -m 'Add some feature'
 ```
-4.Push to the branch:
+4. Push to the branch:
 ```bash
 git push origin feature/YourFeature
 ```
